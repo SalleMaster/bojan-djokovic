@@ -1,0 +1,218 @@
+// Button
+// .btn {
+//   position: relative;
+//   overflow: hidden;
+//   display: inline-block;
+//   padding: 0.5rem 1rem;
+//   transition: color 0.3s ease-in-out;
+//   font-size: 1.25rem;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+
+//   span:first-child {
+//     position: relative;
+//     transition: color 0.5s cubic-bezier(0.48, 0, 0.12, 1);
+//     z-index: 5;
+//   }
+
+//   span:last-child {
+//     display: block;
+//     position: absolute;
+//     transition: all 0.4s cubic-bezier(0.48, 0, 0.12, 1);
+//     z-index: 10;
+//     top: 20%;
+//     transform: translateY(225%);
+//   }
+
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     bottom: -50%;
+//     left: 0;
+//     width: 103%;
+//     height: 100%;
+//     transform-origin: bottom center;
+//     transition: transform 0.5s cubic-bezier(0.48, 0, 0.12, 1);
+//     transform: skewY(9.3deg) scaleY(0);
+//     z-index: 9;
+//   }
+
+//   &:hover {
+//     span:last-child {
+//       transform: translateY(0);
+//       transition: all 0.8s cubic-bezier(0.48, 0, 0.12, 1);
+//     }
+
+//     &:after {
+//       transform: skewY(9.3deg) scaleY(2);
+//     }
+//   }
+// }
+
+// .btn-primary {
+//   background: $primary;
+//   color: $light;
+
+//   span:first-child {
+//     color: $light;
+//   }
+//   span:last-child {
+//     color: $light;
+//   }
+
+//   &:after {
+//     background: $secondary;
+//   }
+// }
+
+// .btn-secondary {
+//   background: $light;
+//   color: $primary;
+
+//   span:first-child {
+//     color: $primary;
+//   }
+//   span:last-child {
+//     color: $light;
+//   }
+
+//   &:after {
+//     background: $secondary;
+//   }
+// }
+
+.button {
+	pointer-events: auto;
+	cursor: pointer;
+	// background: #e7e7e7;
+	border: none;
+  border-radius: 5px;
+	padding: 0.5rem 1rem;
+	margin: 0;
+	position: relative;
+	display: inline-block;
+}
+
+.button-primary {
+  background: $primary;
+  color: $light
+}
+
+.button::before,
+.button::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.button--telesto {
+	overflow: hidden;
+  color: $light;
+}
+
+.button--telesto span {
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+
+.button--telesto > span {
+	overflow: hidden;
+	// mix-blend-mode: difference;
+}
+
+.button--telesto:hover > span > span {
+	animation: MoveRightInitial 0.1s forwards, MoveRightEnd 0.3s forwards 0.2s;
+}
+
+@keyframes MoveRightInitial {
+	to {
+		transform: translate3d(105%,0,0);
+	}
+}
+
+@keyframes MoveRightEnd {
+	from {
+		transform: translate3d(-100%,0,0);
+	}
+	to {
+		transform: translate3d(0,0,0);
+	}
+}
+
+.button--telesto::before,
+.button--telesto::after {
+	content: '';
+	background: $secondary;
+}
+
+.button--telesto::before {
+	width: 135%;
+	-webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 0%);
+	clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 0%);
+	transform: translate3d(-100%,0,0);
+}
+
+.button--telesto:hover::before {
+	transform: translate3d(0,0,0);
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.button--telesto::after {
+	width: 105%;
+	transform: translate3d(100%,0,0);
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.button--telesto:hover::after {
+	transform: translate3d(0,0,0);
+	transition: transform 0.01s 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+// Section
+.section {
+  margin: 5rem 0;
+  padding: 5rem 0;
+
+  .container {
+    h1 {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+// Line
+body {
+  .line {
+    width: 100%;
+    height: 1px;
+    background: $black;
+    opacity: 0.1;
+  }
+
+  &.bg-black {
+    .line {
+      background: $white;
+    }
+  }
+}
+
+// Text
+.text-primary {
+  color: $primary
+}
+
+.text-secondary {
+  color: $secondary
+}
+
+.text-light {
+  color: $light
+}
+
+.font-weight-light {
+  font-weight: 300
+}
