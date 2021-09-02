@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <g id="Group_136" data-name="Group 136" transform="translate(-2172 -1415)">
+    <g id="Group_132" data-name="Group 132">
+      <rect id="Rectangle_21" data-name="Rectangle 21" width="100" height="100" transform="translate(2172 1415)" fill="rgba(250,250,250,0)"/>
+      <g id="Group_128" data-name="Group 128" transform="translate(-79.775 123)">
+        <g id="Drains_Icon" data-name="Drains Icon" transform="translate(2272.03 1304.312)">
+          <path id="Path_13" data-name="Path 13" d="M2.529,10.155H4.118V25.349H2.6ZM57.238,2.476H42.044V48.055a5.125,5.125,0,0,1-4.256,4.972V68.221a20.317,20.317,0,0,0,19.45-20.166Zm-29.9,45.579v-6.63h0V30.377a20.3,20.3,0,0,0-17.1-19.93v16.1a5.125,5.125,0,0,1,1.894,3.894V42.738h0v5.317A20.3,20.3,0,0,0,31.592,68.29V53.1A5.125,5.125,0,0,1,27.337,48.055Z" transform="translate(-2.529 5.3)" fill="#219ebc" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+          <path id="Path_14" data-name="Path 14" d="M3.474,4.407h3.26V22.651H3.474ZM31.1,65.941h3.26V47.694H31.1Z" transform="translate(-0.506 9.434)" fill="#8ecae6" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+          <path id="Path_15" data-name="Path 15" d="M38.341,3.37V0H13.59V3.37a3.536,3.536,0,0,0,3.536,3.536H34.82A3.536,3.536,0,0,0,38.341,3.37Z" transform="translate(21.148)" fill="#fb8500" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

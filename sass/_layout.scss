@@ -10,9 +10,9 @@ $black: #010101;
 $white: #ffffff;
 $light: #fafafa;
 $red: #f12d2d;
-$primary: #219EBC;
+$primary: #219ebc;
 $secondary: #023047;
-$accent: #FB8500;
+$accent: #fb8500;
 
 // Reset Default Style
 * {
@@ -22,7 +22,7 @@ $accent: #FB8500;
 
   &::selection {
     background: none;
-    color: $secondary;
+    color: $primary;
   }
 }
 
@@ -36,13 +36,14 @@ ul {
 
 img {
   width: 100%;
+  vertical-align: middle;
 }
 
 // HTML & Body
 html {
   font-size: 12px;
 
-  overflow: hidden;
+  // overflow: hidden;
 
   scroll-behavior: smooth;
 }

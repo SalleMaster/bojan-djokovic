@@ -7,7 +7,7 @@
 
 *::selection {
   background: none;
-  color: #023047;
+  color: #219ebc;
 }
 
 a {
@@ -20,11 +20,11 @@ ul {
 
 img {
   width: 100%;
+  vertical-align: middle;
 }
 
 html {
   font-size: 12px;
-  overflow: hidden;
   scroll-behavior: smooth;
 }
 
@@ -145,6 +145,7 @@ p {
   cursor: pointer;
   border: none;
   border-radius: 5px;
+  font-size: 1.25rem;
   padding: 0.5rem 1rem;
   margin: 0;
   position: relative;
@@ -152,8 +153,13 @@ p {
 }
 
 .button-primary {
-  background: #219EBC;
+  background: #219ebc;
   color: #fafafa;
+}
+
+.button-secondary {
+  background: #fafafa;
+  color: #219ebc;
 }
 
 .button::before,
@@ -167,7 +173,6 @@ p {
 
 .button--telesto {
   overflow: hidden;
-  color: #fafafa;
 }
 
 .button--telesto span {
@@ -182,6 +187,7 @@ p {
 
 .button--telesto:hover > span > span {
   animation: MoveRightInitial 0.1s forwards, MoveRightEnd 0.3s forwards 0.2s;
+  color: #fafafa;
 }
 
 @keyframes MoveRightInitial {
@@ -248,7 +254,7 @@ body.bg-black .line {
 }
 
 .text-primary {
-  color: #219EBC;
+  color: #219ebc;
 }
 
 .text-secondary {
@@ -261,6 +267,10 @@ body.bg-black .line {
 
 .font-weight-light {
   font-weight: 300;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .hero {
@@ -300,7 +310,7 @@ body.bg-black .line {
   margin-top: 2rem;
 }
 
-.hero .container .header-wrapper .buttons-wrapper .btn {
+.hero .container .header-wrapper .buttons-wrapper .button {
   margin-right: 1rem;
 }
 
@@ -399,5 +409,93 @@ body.bg-black .line {
   }
   .hero .container .header-wrapper img {
     height: 85%;
+  }
+}
+
+.services-section .container .services-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 4rem;
+}
+
+.services-section .container .services-wrapper .services-card .services-card-icon {
+  display: flex;
+  flex-direction: column;
+  background: #fafafa;
+  padding: 3rem 0.5rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+.services-section .container .services-wrapper .services-card .services-card-icon img {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.services-section .container .services-wrapper .services-card .services-card-icon:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: -1;
+  transform: rotate(4deg);
+  background: #219ebc;
+  opacity: 0.45;
+  transition: all 0.2s ease-in-out;
+}
+
+.services-section .container .services-wrapper .services-card .services-card-icon:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: -1;
+  transform: rotate(-4deg);
+  background: #219ebc;
+  opacity: 0.2;
+  transition: all 0.2s ease-in-out;
+}
+
+.services-section .container .services-wrapper .services-card .services-card-icon:hover:before {
+  transform: rotate(6deg);
+  scale: 1.02;
+}
+
+.services-section .container .services-wrapper .services-card .services-card-icon:hover:after {
+  transform: rotate(-8deg);
+  scale: 1.02;
+}
+
+.services-section .container .services-wrapper .services-card p {
+  margin-top: 1rem;
+}
+
+@media (min-width: 576px) {
+  .services-section .container .services-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .services-section .container .services-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .services-section .container .services-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6rem 5rem;
   }
 }

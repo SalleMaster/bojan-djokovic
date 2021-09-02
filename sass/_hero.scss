@@ -9,7 +9,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 0;
   }
 
@@ -34,7 +34,7 @@
       .buttons-wrapper {
         margin-top: 2rem;
 
-        .btn {
+        .button {
           margin-right: 1rem;
         }
       }
@@ -108,18 +108,10 @@
   .hero {
     .container {
       .header-wrapper {
-        h5 {
-        }
-
         .headline {
           font-size: 4rem;
           font-weight: 600;
           line-height: 1.3;
-        }
-
-        .buttons-wrapper {
-          .btn {
-          }
         }
 
         img {
@@ -134,18 +126,10 @@
   .hero {
     .container {
       .header-wrapper {
-        h5 {
-        }
-
         .headline {
           font-size: 4rem;
           font-weight: 600;
           line-height: 1.3;
-        }
-
-        .buttons-wrapper {
-          .btn {
-          }
         }
 
         img {
@@ -164,19 +148,11 @@
   .hero {
     .container {
       .header-wrapper {
-        h5 {
-        }
-
         .headline {
           font-size: 4rem;
           font-weight: 600;
           line-height: 1.3;
           width: 70%;
-        }
-
-        .buttons-wrapper {
-          .btn {
-          }
         }
 
         img {
