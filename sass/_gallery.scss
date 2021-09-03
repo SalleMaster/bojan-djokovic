@@ -1,0 +1,35 @@
+.gallery-section {
+  .container {
+    .gallery-wrapper {
+      padding-top: 5rem;
+      line-height: 0;
+      column-count: 2;
+      column-gap: 1rem;
+
+      figure {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+// Responsive Media Queries
+@media (min-width: 768px) {
+  .gallery-section {
+    .container {
+      .gallery-wrapper {
+        column-count: 3;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery-section {
+    .container {
+      .gallery-wrapper {
+        column-count: 4;
+      }
+    }
+  }
+}
