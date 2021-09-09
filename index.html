@@ -34,7 +34,7 @@
   <body>
     <!-- Hero Section -->
     <header id="hero" class="hero">
-      <div class="hero-overlay"></div>
+      <div class="overlay"></div>
       <div class="container">
         <div class="header-wrapper">
           <h1 class="headline text-light header-anim2">
@@ -102,8 +102,7 @@
     </section>
 
     <!-- Spacer -->
-    <img src="./img/layout/spacer-bottom.svg" alt="spacer" />
-    <img src="./img/layout/spacer-top.svg" alt="spacer" />
+    <img src="./img/layout/spacer-middle.svg" alt="spacer" />
 
     <!-- Gallery Section -->
     <section id="gallery" class="section gallery-section">
@@ -875,6 +874,135 @@
               Image caption
             </figcaption> -->
           </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spacer -->
+    <img src="./img/layout/spacer-middle.svg" alt="spacer" />
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h1 class="text-align-center">O nama</h1>
+        <div class="about-wrapper">
+          <p>
+            Mi smo firma koja godinama unazad posluje vrlo uspešno u izradi
+            vodovodnih instalacija. Zahvaljujući dugogodišnjem iskustvu i našem
+            timu visoko smo pozicionirani u branši kojom se bavimo. Iskustvo smo
+            sticali od davne 2001. godine, kako u zemlji, tako i u inostranstvu.
+            Za nama je dosta uspešno realizovanih projekata u oblasti vodovodne,
+            kanalizacione i hidrantske mreže.
+          </p>
+          <h2 class="text-align-center">Šta nas čini posebnim?</h2>
+          <div class="special-wrapper">
+            <div class="special-card text-align-center">
+              <img class="img" src="./img/icons/hands.svg" alt="handshake" />
+              <p>Poverenje</p>
+            </div>
+            <div class="special-card text-align-center">
+              <img src="./img/icons/check.svg" alt="checkmark" />
+              <p>Kvalitet</p>
+            </div>
+            <div class="special-card text-align-center">
+              <img src="./img/icons/dollar.svg" alt="dollar-sign" />
+              <p>Pristupačnost</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="overlay"></div>
+      <div class="container">
+        <h1 class="text-align-center">Kontakt</h1>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="contact-info-card">
+              <h4 class="label">Email</h5>
+              <a
+                href="mailto:djokovic1984bojan@gmail.com"
+                class="link link--metis"
+                ><i class="far fa-envelope"></i> djokovic1984bojan@gmail.com</a
+              >
+            </div>
+            <div class="contact-info-card">
+              <h4 class="label">Telefon</h5>
+              <a
+                href="tel:+381 62 290 630"
+                class="link link--metis"
+                ><i class="fas fa-mobile-alt"></i> +381 62 290 630</a
+              >
+              <a
+                href="tel:+381 64 858 64 00"
+                class="link link--metis"
+                ><i class="fas fa-mobile-alt"></i> +381 64 858 64 00</a
+              >
+            </div>
+            <div class="contact-info-card">
+              <h4 class="label">Društvene mreže</h5>
+              <a
+                href="djokovic1984bojan@gmail.com"
+                class="link link--metis"
+                ><i class="fab fa-facebook"></i> facebook</a
+              >
+              <a
+                href="djokovic1984bojan@gmail.com"
+                class="link link--metis"
+                ><i class="fab fa-instagram"></i> instagram</a
+              >
+            </div>
+          </div>
+          <div class="contact-form">
+            <div class="contact-form-wrapper">
+              <h4>Pišite nam</h4>
+              <form
+                action="./pages/thanks.html"
+                name="contact"
+                method="POST"
+                data-netlify="true"
+              >
+                <div class="form-box">
+                  <label for="name"><h5>Ime i prezime</h5></label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    class="form-control font-secondary"
+                  />
+                </div>
+                <div class="form-box">
+                  <label for="email"><h5>Email</h5></label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    class="form-control font-secondary"
+                  />
+                </div>
+                <div class="form-box">
+                  <label for="message"><h5>Poruka</h5></label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="form-control font-secondary"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+  
+                <div class="form-box">
+                  <button type="submit" class="button button-primary button--telesto">
+                    <span><span>Pošalji</span></span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
