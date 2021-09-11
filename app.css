@@ -627,7 +627,7 @@ body.bg-black .line {
   display: flex;
   flex-direction: column;
   color: #ffffff;
-  padding: 3rem 5rem;
+  padding: 2rem 4rem;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -637,13 +637,13 @@ body.bg-black .line {
 
 .contact-section .container .contact-wrapper .contact-form-wrapper h4 {
   align-self: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .contact-section .container .contact-wrapper .contact-form-wrapper form .form-box {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .contact-section .container .contact-wrapper .contact-form-wrapper form .form-box label {
@@ -676,6 +676,78 @@ body.bg-black .line {
 @media (min-width: 992px) {
   .contact-section .contact-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+.footer-section {
+  background: #023047;
+  padding: 5rem 0;
+  margin: 0;
+}
+
+.footer-section .container .footer-wrapper {
+  color: #fafafa;
+}
+
+.footer-section .container .footer-wrapper img {
+  width: 120px;
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.footer-section .container .footer-wrapper .links-wrapper {
+  margin-bottom: 3rem;
+}
+
+.footer-section .container .footer-wrapper .links-wrapper .contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.footer-section .container .footer-wrapper .links-wrapper .contact-wrapper .link {
+  color: #fafafa;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.footer-section .container .footer-wrapper .links-wrapper .navigation-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section .container .footer-wrapper .links-wrapper .navigation-links .link {
+  color: #fafafa;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.footer-section .container .footer-wrapper .rights {
+  margin-bottom: 1rem;
+}
+
+.footer-section .container .footer-wrapper .signature a {
+  color: #fafafa;
+}
+
+.footer-section .container .footer-wrapper .signature a:hover {
+  color: #219ebc;
+}
+
+@media (min-width: 768px) {
+  .footer-section .container .footer-wrapper .links-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-section .container .footer-wrapper .links-wrapper .contact-wrapper {
+    margin-bottom: 0;
+  }
+  .footer-section .container .footer-wrapper .links-wrapper .navigation-links {
+    flex-direction: row;
+  }
+  .footer-section .container .footer-wrapper .links-wrapper .navigation-links .link {
+    margin-top: auto;
+    margin-left: 1rem;
   }
 }
