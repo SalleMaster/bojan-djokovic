@@ -594,6 +594,48 @@ body.bg-black .line {
   transform: scale3d(1, 1, 1);
 }
 
+.link--leda {
+  overflow: hidden;
+  line-height: 2;
+  font-weight: 300;
+}
+
+.link--leda::before {
+  height: 2px;
+  top: calc(100% - 5px);
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.3, 1);
+}
+
+.link--leda:hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+}
+
+.link--leda::after {
+  content: attr(data-text);
+  height: 100%;
+  top: 0;
+  background: none;
+  transform-origin: 100% 50%;
+  transform: translate3d(150%, 0, 0);
+  transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.3, 1);
+}
+
+.link--leda:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.link--leda span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.3, 1);
+}
+
+.link--leda:hover span {
+  transform: translate3d(-150%, 0, 0);
+}
+
 .contact-section {
   background-image: url("/img/layout/contact-bg.png");
   background-size: cover;
@@ -759,6 +801,42 @@ body.bg-black .line {
   z-index: 1000;
 }
 
+.nav .logo-dark {
+  display: none;
+}
+
+.nav.nav-dark a {
+  color: #023047 !important;
+}
+
+.nav.nav-dark .logo-dark {
+  display: block;
+}
+
+.nav.nav-dark .logo-light {
+  display: none;
+}
+
+.nav.nav-dark .burger-menu {
+  align-self: center;
+}
+
+.nav.nav-dark .burger-menu span {
+  background: #023047 !important;
+}
+
+.nav.nav-dark .menu-responsive {
+  background: #fafafa;
+}
+
+.nav.nav-dark .menu-responsive .menu-responsive-links {
+  text-align: center;
+}
+
+.nav.nav-dark .menu-responsive .menu-responsive-links .menu-responsive-link a {
+  color: #023047 !important;
+}
+
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
@@ -779,41 +857,9 @@ body.bg-black .line {
   margin: 0 1rem;
 }
 
-.link {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  font-weight: 300;
-}
-
-.link span:first-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform 0.5s cubic-bezier(0, 1.07, 0.89, 0.99);
-  will-change: transform;
-}
-
-.link span:nth-child(2) {
-  opacity: 0;
-}
-
-.link span:last-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(100%);
-  transition: transform 0.5s cubic-bezier(0, 1.07, 0.89, 0.99);
-  will-change: transform;
-  color: #f12d2d;
-}
-
-.link:hover span:first-child {
-  transform: translateY(-100%);
-}
-
-.link:hover span:last-child {
-  transform: translateY(0);
+.nav-wrapper .nav-links .nav-link-item a {
+  color: #fafafa;
+  transition: all 0.2s ease-in-out;
 }
 
 .burger-menu {
@@ -828,7 +874,7 @@ body.bg-black .line {
   display: block;
   width: 24px;
   height: 1px;
-  background: #010101;
+  background: #fafafa;
   margin: 5px 0;
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -851,7 +897,7 @@ body.bg-black .line {
   width: 100vw;
   top: 0;
   left: 0;
-  background: #ffffff;
+  background: #023047;
   transition: transform 1s cubic-bezier(0.9, 0.12, 0.2, 1);
   transform: translateY(-100%);
   z-index: -1;
@@ -864,6 +910,10 @@ body.bg-black .line {
 .menu-responsive .menu-responsive-links .menu-responsive-link {
   margin-bottom: 1rem;
   font-size: 4rem;
+}
+
+.menu-responsive .menu-responsive-links .menu-responsive-link a {
+  color: #fafafa !important;
 }
 
 .menu-responsive .menu-responsive-links .menu-responsive-link.link-sm {
@@ -879,14 +929,6 @@ body.bg-black .line {
 
 .menu-responsive.active {
   transform: translateY(0);
-}
-
-body.bg-black .burger-menu span {
-  background: #d7c9c2;
-}
-
-body.bg-black .menu-responsive .menu-responsive-links .menu-responsive-link .link span:first-child {
-  color: #010101;
 }
 
 @media (min-width: 768px) {
