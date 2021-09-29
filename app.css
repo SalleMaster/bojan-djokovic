@@ -286,6 +286,7 @@ body.bg-black .line {
 .hero {
   position: relative;
   background: url("./img/hero/hero-bg.png");
+  background-size: cover;
 }
 
 .hero .container .header-wrapper {
@@ -637,7 +638,7 @@ body.bg-black .line {
 }
 
 .contact-section {
-  background-image: url("/img/layout/contact-bg.png");
+  background-image: url("/img/layout/contact-bg.jpg");
   background-size: cover;
   margin: 0;
   padding: 10rem 0;
