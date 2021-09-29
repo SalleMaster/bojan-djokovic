@@ -942,3 +942,22 @@ body.bg-black .line {
     display: none;
   }
 }
+
+.thanks-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.thanks-section .container .thanks-wrapper h2 {
+  margin-bottom: 3rem;
+}
+
+.thanks-section .container .thanks-wrapper h5 {
+  margin-bottom: 1rem;
+}
+
+.thanks-section .container .thanks-wrapper a {
+  margin-top: 2rem;
+}
