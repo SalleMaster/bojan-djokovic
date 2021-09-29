@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/1f958acecf.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../../app.css" />
+    <title>Hvala - Bojan Đoković</title>
+    <link rel="shortcut icon" type="image/jpg" href="../img/icons/icon.ico" />
+  </head>
+  <body class="thanks-body">
+    <!-- Nav -->
+    <nav class="nav">
+      <div class="nav-wrapper">
+        <a href="../index.html" class="nav-logo"
+          ><img
+            class="logo-light"
+            src="/img/logo/logo-dark.svg"
+            alt="bojan-logo" />
+          <img class="logo-dark" src="/img/logo/logo-dark.svg" alt="bojan-logo"
+        /></a>
+      </div>
+    </nav>
+
+    <section id="thanks" class="section thanks-section">
+      <div class="container">
+        <div class="thanks-wrapper">
+          <h2>Hvala vam na poslatoj poruci!</h2>
+          <h5 class="opacity-7">
+            Cenimo vaše angažovanje. Javljamo vam se u najkraćem mogućem roku!
+          </h5>
+          <h5 class="opacity-7">Želimo vam prijatan dan!</h5>
+          <a href="../index.html" class="button button-primary button--telesto">
+            <span><span>Nazad</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer" class="section footer-section">
+      <div class="container">
+        <div class="footer-wrapper">
+          <img src="/img/logo/logo-light.svg" alt="Bojan" />
+          <div class="links-wrapper">
+            <div class="contact-wrapper">
+              <a
+                href="mailto:djokovic1984bojan@gmail.com"
+                class="link link--metis"
+                ><i class="far fa-envelope"></i> djokovic1984bojan@gmail.com</a
+              >
+              <a href="tel:+381 62 290 630" class="link link--metis"
+                ><i class="fas fa-mobile-alt"></i> +381 62 290 630</a
+              >
+              <a href="tel:+381 64 858 64 00" class="link link--metis"
+                ><i class="fas fa-mobile-alt"></i> +381 64 858 64 00</a
+              >
+            </div>
+            <div class="navigation-links">
+              <a href="../index.html#hero" class="link link--metis">Početna</a>
+              <a href="../index.html#services" class="link link--metis"
+                >Usluge</a
+              >
+              <a href="../index.html#gallery" class="link link--metis"
+                >Galerija</a
+              >
+              <a href="../index.html#about" class="link link--metis">O nama</a>
+              <a href="../index.html#contact" class="link link--metis"
+                >Kontakt</a
+              >
+            </div>
+          </div>
+          <p class="text-align-center rights">
+            &copy; <span class="year"></span> - Adaptacije kupatila Djokovic
+            Bojan - Sva prava zadržana
+          </p>
+          <p class="text-align-center signature text-small">
+            developed by
+            <a
+              href="https://radovanovic.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >radovanovic.net</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Footer Year
+      const year = document.querySelector('.year')
+
+      const date = new Date()
+      const currentYear = date.getFullYear()
+
+      year.innerHTML = currentYear
+    </script>
+  </body>
+</html>

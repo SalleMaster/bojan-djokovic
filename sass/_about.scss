@@ -1,0 +1,47 @@
+.about-section {
+  background-image: url('./img/layout/pipe.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .container {
+    .about-wrapper {
+      p {
+        margin-bottom: 8rem;
+      }
+
+      h2 {
+        margin-bottom: 8rem;
+      }
+
+      .special-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .special-card {
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive Media Queries
+@media (min-width: 992px) {
+  .about-section {
+    .container {
+      .about-wrapper {
+        .special-wrapper {
+          .special-card {
+            img {
+              width: 25%;
+              margin-bottom: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

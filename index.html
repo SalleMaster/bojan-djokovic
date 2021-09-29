@@ -13,13 +13,92 @@
 
     <link rel="stylesheet" href="./app.css" />
 
+    <!-- Core CSS file -->
+    <link rel="stylesheet" href="/photoswipe/photoswipe.css" />
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css" />
+
+    <!-- Core JS file -->
+    <script src="/photoswipe/photoswipe.min.js"></script>
+
+    <!-- UI JS file -->
+    <script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
     <title>Adaptacije Kupatila Đoković Bojan</title>
     <link rel="shortcut icon" type="image/jpg" href="./img/icons/icon.ico" />
   </head>
   <body>
+<!-- Nav -->
+<nav class="nav">
+  <div class="nav-wrapper">
+    <a href="#hero" class="nav-logo"><img class='logo-light' src="/img/logo/logo-light.svg" alt="bojan-logo">
+      <img class='logo-dark' src="/img/logo/logo-dark.svg" alt="bojan-logo"></a>
+    <ul class="nav-links">
+      <li class="nav-link-item">
+        <a href="#services" class="link link--leda" data-text="Usluge">
+          <span>Usluge</span>
+        </a>
+      </li>
+      <li class="nav-link-item">
+        <a href="#gallery" class="link link--leda" data-text="Galerija">
+          <span>Galerija</span>
+        </a>
+      </li>
+      <li class="nav-link-item">
+        <a href="#about" class="link link--leda" data-text="O nama">
+          <span>O nama</span>
+        </a>
+      </li>
+      <li class="nav-link-item">
+        <a href="#contact" class="link link--leda" data-text="Kontakt">
+          <span>Kontakt</span>
+        </a>
+      </li>
+    </ul>
+    <button class="burger-menu">
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="menu-responsive">
+    <ul class="menu-responsive-links">
+      <li class="menu-responsive-link">
+        <a href="#hero" class="link" >
+          <span>Početna</span>
+        </a>
+      </li>
+      <li class="menu-responsive-link">
+        <a href="#services" class="link" >
+          <span>Usluge</span>
+        </a>
+      </li>
+      <li class="menu-responsive-link">
+        <a href="#gallery" class="link" >
+          <span>Galerija</span>
+        </a>
+      </li>
+      <li class="menu-responsive-link">
+        <a href="#about" class="link" >
+          <span>O nama</span>
+        </a>
+      </li>
+      <li class="menu-responsive-link">
+        <a href="#contact" class="link" >
+          <span>Kontakt</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
     <!-- Hero Section -->
     <header id="hero" class="hero">
-      <div class="hero-overlay"></div>
+      <div class="overlay"></div>
       <div class="container">
         <div class="header-wrapper">
           <h1 class="headline text-light header-anim2">
@@ -87,7 +166,1269 @@
     </section>
 
     <!-- Spacer -->
-    <img src="./img/layout/spacer-bottom.svg" alt="spacer" />
-    <img src="./img/layout/spacer-top.svg" alt="spacer" />
+    <img src="./img/layout/spacer-middle.svg" alt="spacer" />
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <h1 class="text-align-center">Galerija</h1>
+        <div
+          class="gallery-wrapper"
+          itemscope
+          itemtype="http://schema.org/ImageGallery"
+        >
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/1.jpg"
+              itemprop="contentUrl"
+              data-size="1920x1080"
+            >
+              <img
+                src="./img/gallery/1.jpg"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/2.jpg"
+              itemprop="contentUrl"
+              data-size="1200x1600"
+            >
+              <img
+                src="./img/gallery/2.jpg"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/3.JPG"
+              itemprop="contentUrl"
+              data-size="2048x1536"
+            >
+              <img
+                src="./img/gallery/3.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/4.JPG"
+              itemprop="contentUrl"
+              data-size="1500x2000"
+            >
+              <img
+                src="./img/gallery/4.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/5.JPG"
+              itemprop="contentUrl"
+              data-size="1200x1600"
+            >
+              <img
+                src="./img/gallery/5.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/6.JPG"
+              itemprop="contentUrl"
+              data-size="1200x1600"
+            >
+              <img
+                src="./img/gallery/6.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/7.JPG"
+              itemprop="contentUrl"
+              data-size="900x1600"
+            >
+              <img
+                src="./img/gallery/7.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/8.JPG"
+              itemprop="contentUrl"
+              data-size="1920x1080"
+            >
+              <img
+                src="./img/gallery/8.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/9.JPG"
+              itemprop="contentUrl"
+              data-size="1800x1800"
+            >
+              <img
+                src="./img/gallery/9.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/10.JPG"
+              itemprop="contentUrl"
+              data-size="1500x2000"
+            >
+              <img
+                src="./img/gallery/10.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/11.JPG"
+              itemprop="contentUrl"
+              data-size="1500x2000"
+            >
+              <img
+                src="./img/gallery/11.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/12.JPG"
+              itemprop="contentUrl"
+              data-size="2000x1500"
+            >
+              <img
+                src="./img/gallery/12.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/13.JPG"
+              itemprop="contentUrl"
+              data-size="2048x1536"
+            >
+              <img
+                src="./img/gallery/13.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/14.JPG"
+              itemprop="contentUrl"
+              data-size="1200x1600"
+            >
+              <img
+                src="./img/gallery/14.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/15.JPG"
+              itemprop="contentUrl"
+              data-size="900x1600"
+            >
+              <img
+                src="./img/gallery/15.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/16.JPG"
+              itemprop="contentUrl"
+              data-size="1500x2000"
+            >
+              <img
+                src="./img/gallery/16.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/17.JPG"
+              itemprop="contentUrl"
+              data-size="1200x1600"
+            >
+              <img
+                src="./img/gallery/17.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/18.jpg"
+              itemprop="contentUrl"
+              data-size="1200x1600"
+            >
+              <img
+                src="./img/gallery/18.jpg"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/19.JPG"
+              itemprop="contentUrl"
+              data-size="1536x2048"
+            >
+              <img
+                src="./img/gallery/19.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/20.JPG"
+              itemprop="contentUrl"
+              data-size="2000x1125"
+            >
+              <img
+                src="./img/gallery/20.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/21.JPG"
+              itemprop="contentUrl"
+              data-size="1200x1600"
+            >
+              <img
+                src="./img/gallery/21.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/22.JPG"
+              itemprop="contentUrl"
+              data-size="1200x1600"
+            >
+              <img
+                src="./img/gallery/22.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/23.JPG"
+              itemprop="contentUrl"
+              data-size="1920x1080"
+            >
+              <img
+                src="./img/gallery/23.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/24.JPG"
+              itemprop="contentUrl"
+              data-size="1920x1080"
+            >
+              <img
+                src="./img/gallery/24.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/25.JPG"
+              itemprop="contentUrl"
+              data-size="1500x2000"
+            >
+              <img
+                src="./img/gallery/25.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/26.JPG"
+              itemprop="contentUrl"
+              data-size="2048x1536"
+            >
+              <img
+                src="./img/gallery/26.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/27.JPG"
+              itemprop="contentUrl"
+              data-size="894x1748"
+            >
+              <img
+                src="./img/gallery/27.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/28.JPG"
+              itemprop="contentUrl"
+              data-size="1536x2048"
+            >
+              <img
+                src="./img/gallery/28.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/29.JPG"
+              itemprop="contentUrl"
+              data-size="1200x1600"
+            >
+              <img
+                src="./img/gallery/29.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/30.JPG"
+              itemprop="contentUrl"
+              data-size="2000x1500"
+            >
+              <img
+                src="./img/gallery/30.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/31.JPG"
+              itemprop="contentUrl"
+              data-size="1200x1600"
+            >
+              <img
+                src="./img/gallery/31.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/32.JPG"
+              itemprop="contentUrl"
+              data-size="2048x1152"
+            >
+              <img
+                src="./img/gallery/32.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/33.JPG"
+              itemprop="contentUrl"
+              data-size="2000x1500"
+            >
+              <img
+                src="./img/gallery/33.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/34.JPG"
+              itemprop="contentUrl"
+              data-size="1500x2000"
+            >
+              <img
+                src="./img/gallery/34.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/35.JPG"
+              itemprop="contentUrl"
+              data-size="1200x1600"
+            >
+              <img
+                src="./img/gallery/35.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/36.JPG"
+              itemprop="contentUrl"
+              data-size="1200x1600"
+            >
+              <img
+                src="./img/gallery/36.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/37.JPG"
+              itemprop="contentUrl"
+              data-size="1200x1600"
+            >
+              <img
+                src="./img/gallery/37.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+          <figure
+            itemprop="associatedMedia"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <a
+              href="./img/gallery/38.JPG"
+              itemprop="contentUrl"
+              data-size="2016x1512"
+            >
+              <img
+                src="./img/gallery/38.JPG"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </a>
+            <!-- <figcaption itemprop="caption description">
+              Image caption
+            </figcaption> -->
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spacer -->
+    <img src="./img/layout/spacer-middle.svg" alt="spacer" />
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h1 class="text-align-center">O nama</h1>
+        <div class="about-wrapper">
+          <p>
+            Mi smo firma koja godinama unazad posluje vrlo uspešno u izradi
+            vodovodnih instalacija. Zahvaljujući dugogodišnjem iskustvu i našem
+            timu visoko smo pozicionirani u branši kojom se bavimo. Iskustvo smo
+            sticali od davne 2001. godine, kako u zemlji, tako i u inostranstvu.
+            Za nama je dosta uspešno realizovanih projekata u oblasti vodovodne,
+            kanalizacione i hidrantske mreže.
+          </p>
+          <h2 class="text-align-center">Šta nas čini posebnim?</h2>
+          <div class="special-wrapper">
+            <div class="special-card text-align-center">
+              <img class="img" src="./img/icons/hands.svg" alt="handshake" />
+              <p>Poverenje</p>
+            </div>
+            <div class="special-card text-align-center">
+              <img src="./img/icons/check.svg" alt="checkmark" />
+              <p>Kvalitet</p>
+            </div>
+            <div class="special-card text-align-center">
+              <img src="./img/icons/dollar.svg" alt="dollar-sign" />
+              <p>Pristupačnost</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="overlay"></div>
+      <div class="container">
+        <h1 class="text-align-center">Kontakt</h1>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="contact-info-card">
+              <h4 class="label">Email</h5>
+              <a
+                href="mailto:djokovic1984bojan@gmail.com"
+                class="link link--metis"
+                ><i class="far fa-envelope"></i> djokovic1984bojan@gmail.com</a
+              >
+            </div>
+            <div class="contact-info-card">
+              <h4 class="label">Telefon</h5>
+              <a
+                href="tel:+381 62 290 630"
+                class="link link--metis"
+                ><i class="fas fa-mobile-alt"></i> +381 62 290 630</a
+              >
+              <a
+                href="tel:+381 64 858 64 00"
+                class="link link--metis"
+                ><i class="fas fa-mobile-alt"></i> +381 64 858 64 00</a
+              >
+            </div>
+            <div class="contact-info-card">
+              <h4 class="label">Društvene mreže</h5>
+              <a
+                href="djokovic1984bojan@gmail.com"
+                class="link link--metis"
+                ><i class="fab fa-facebook"></i> facebook</a
+              >
+              <a
+                href="djokovic1984bojan@gmail.com"
+                class="link link--metis"
+                ><i class="fab fa-instagram"></i> instagram</a
+              >
+            </div>
+          </div>
+          <div class="contact-form">
+            <div class="contact-form-wrapper">
+              <h4>Pišite nam</h4>
+              <form
+                action="./pages/thanks.html"
+                name="contact"
+                method="POST"
+                data-netlify="true"
+              >
+                <div class="form-box">
+                  <label for="name"><h5>Ime i prezime</h5></label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    class="form-control font-secondary"
+                  />
+                </div>
+                <div class="form-box">
+                  <label for="email"><h5>Email</h5></label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    class="form-control font-secondary"
+                  />
+                </div>
+                <div class="form-box">
+                  <label for="message"><h5>Poruka</h5></label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="form-control font-secondary"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+  
+                <div class="form-box">
+                  <button type="submit" class="button button-primary button--telesto">
+                    <span><span>Pošalji</span></span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <section id="footer" class="section footer-section">
+      <div class="container">
+        <div class="footer-wrapper">
+          <img src="/img/logo/logo-light.svg" alt="Bojan">
+          <div class="links-wrapper">
+            <div class="contact-wrapper">
+              <a
+                  href="mailto:djokovic1984bojan@gmail.com"
+                  class="link link--metis"
+                  ><i class="far fa-envelope"></i> djokovic1984bojan@gmail.com</a
+                >
+                <a
+                  href="tel:+381 62 290 630"
+                  class="link link--metis"
+                  ><i class="fas fa-mobile-alt"></i> +381 62 290 630</a
+                >
+                <a
+                  href="tel:+381 64 858 64 00"
+                  class="link link--metis"
+                  ><i class="fas fa-mobile-alt"></i> +381 64 858 64 00</a
+                >
+            </div>
+            <div class="navigation-links">
+              <a
+                  href="#hero"
+                  class="link link--metis"
+                  >Početna</a
+                >
+              <a
+                  href="#services"
+                  class="link link--metis"
+                  >Usluge</a
+                >
+              <a
+                  href="#gallery"
+                  class="link link--metis"
+                  >Galerija</a
+                >
+              <a
+                  href="#about"
+                  class="link link--metis"
+                  >O nama</a
+                >
+              <a
+                  href="#contact"
+                  class="link link--metis"
+                  >Kontakt</a
+                >
+            </div>
+          </div>
+          <p class="text-align-center rights">&copy; <span class="year"></span> - Adaptacije kupatila Djokovic Bojan - Sva prava zadržana</p>
+          <p class="text-align-center signature text-small">developed by <a href="https://radovanovic.net/" target="_blank" rel="noopener noreferrer">radovanovic.net</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Background of PhotoSwipe. 
+       It's a separate element as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+          PhotoSwipe keeps only 3 of them in the DOM to save memory.
+          Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <!--  Controls are self-explanatory. Order can be changed. -->
+
+            <div class="pswp__counter"></div>
+
+            <button
+              class="pswp__button pswp__button--close"
+              title="Close (Esc)"
+            ></button>
+
+            <button
+              class="pswp__button pswp__button--share"
+              title="Share"
+            ></button>
+
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+            ></button>
+
+            <button
+              class="pswp__button pswp__button--zoom"
+              title="Zoom in/out"
+            ></button>
+
+            <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+            <!-- element will get class pswp__preloader--active when preloader is running -->
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+          >
+            <div class="pswp__share-tooltip"></div>
+          </div>
+
+          <button
+            class="pswp__button pswp__button--arrow--left"
+            title="Previous (arrow left)"
+          ></button>
+
+          <button
+            class="pswp__button pswp__button--arrow--right"
+            title="Next (arrow right)"
+          ></button>
+
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      var initPhotoSwipeFromDOM = function (gallerySelector) {
+        // parse slide data (url, title, size ...) from DOM elements
+        // (children of gallerySelector)
+        var parseThumbnailElements = function (el) {
+          var thumbElements = el.childNodes,
+            numNodes = thumbElements.length,
+            items = [],
+            figureEl,
+            linkEl,
+            size,
+            item
+
+          for (var i = 0; i < numNodes; i++) {
+            figureEl = thumbElements[i] // <figure> element
+
+            // include only element nodes
+            if (figureEl.nodeType !== 1) {
+              continue
+            }
+
+            linkEl = figureEl.children[0] // <a> element
+
+            size = linkEl.getAttribute('data-size').split('x')
+
+            // create slide object
+            item = {
+              src: linkEl.getAttribute('href'),
+              w: parseInt(size[0], 10),
+              h: parseInt(size[1], 10),
+            }
+
+            if (figureEl.children.length > 1) {
+              // <figcaption> content
+              item.title = figureEl.children[1].innerHTML
+            }
+
+            if (linkEl.children.length > 0) {
+              // <img> thumbnail element, retrieving thumbnail url
+              item.msrc = linkEl.children[0].getAttribute('src')
+            }
+
+            item.el = figureEl // save link to element for getThumbBoundsFn
+            items.push(item)
+          }
+
+          return items
+        }
+
+        // find nearest parent element
+        var closest = function closest(el, fn) {
+          return el && (fn(el) ? el : closest(el.parentNode, fn))
+        }
+
+        // triggers when user clicks on thumbnail
+        var onThumbnailsClick = function (e) {
+          e = e || window.event
+          e.preventDefault ? e.preventDefault() : (e.returnValue = false)
+
+          var eTarget = e.target || e.srcElement
+
+          // find root element of slide
+          var clickedListItem = closest(eTarget, function (el) {
+            return el.tagName && el.tagName.toUpperCase() === 'FIGURE'
+          })
+
+          if (!clickedListItem) {
+            return
+          }
+
+          // find index of clicked item by looping through all child nodes
+          // alternatively, you may define index via data- attribute
+          var clickedGallery = clickedListItem.parentNode,
+            childNodes = clickedListItem.parentNode.childNodes,
+            numChildNodes = childNodes.length,
+            nodeIndex = 0,
+            index
+
+          for (var i = 0; i < numChildNodes; i++) {
+            if (childNodes[i].nodeType !== 1) {
+              continue
+            }
+
+            if (childNodes[i] === clickedListItem) {
+              index = nodeIndex
+              break
+            }
+            nodeIndex++
+          }
+
+          if (index >= 0) {
+            // open PhotoSwipe if valid index found
+            openPhotoSwipe(index, clickedGallery)
+          }
+          return false
+        }
+
+        // parse picture index and gallery index from URL (#&pid=1&gid=2)
+        var photoswipeParseHash = function () {
+          var hash = window.location.hash.substring(1),
+            params = {}
+
+          if (hash.length < 5) {
+            return params
+          }
+
+          var vars = hash.split('&')
+          for (var i = 0; i < vars.length; i++) {
+            if (!vars[i]) {
+              continue
+            }
+            var pair = vars[i].split('=')
+            if (pair.length < 2) {
+              continue
+            }
+            params[pair[0]] = pair[1]
+          }
+
+          if (params.gid) {
+            params.gid = parseInt(params.gid, 10)
+          }
+
+          return params
+        }
+
+        var openPhotoSwipe = function (
+          index,
+          galleryElement,
+          disableAnimation,
+          fromURL
+        ) {
+          var pswpElement = document.querySelectorAll('.pswp')[0],
+            gallery,
+            options,
+            items
+
+          items = parseThumbnailElements(galleryElement)
+
+          // define options (if needed)
+          options = {
+            // define gallery index (for URL)
+            galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+            getThumbBoundsFn: function (index) {
+              // See Options -> getThumbBoundsFn section of documentation for more info
+              var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                pageYScroll =
+                  window.pageYOffset || document.documentElement.scrollTop,
+                rect = thumbnail.getBoundingClientRect()
+
+              return { x: rect.left, y: rect.top + pageYScroll, w: rect.width }
+            },
+          }
+
+          // PhotoSwipe opened from URL
+          if (fromURL) {
+            if (options.galleryPIDs) {
+              // parse real index when custom PIDs are used
+              // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+              for (var j = 0; j < items.length; j++) {
+                if (items[j].pid == index) {
+                  options.index = j
+                  break
+                }
+              }
+            } else {
+              // in URL indexes start from 1
+              options.index = parseInt(index, 10) - 1
+            }
+          } else {
+            options.index = parseInt(index, 10)
+          }
+
+          // exit if index not found
+          if (isNaN(options.index)) {
+            return
+          }
+
+          if (disableAnimation) {
+            options.showAnimationDuration = 0
+          }
+
+          // Pass data to PhotoSwipe and initialize it
+          gallery = new PhotoSwipe(
+            pswpElement,
+            PhotoSwipeUI_Default,
+            items,
+            options
+          )
+          gallery.init()
+        }
+
+        // loop through all gallery elements and bind events
+        var galleryElements = document.querySelectorAll(gallerySelector)
+
+        for (var i = 0, l = galleryElements.length; i < l; i++) {
+          galleryElements[i].setAttribute('data-pswp-uid', i + 1)
+          galleryElements[i].onclick = onThumbnailsClick
+        }
+
+        // Parse URL and open gallery if it contains #&pid=3&gid=1
+        var hashData = photoswipeParseHash()
+        if (hashData.pid && hashData.gid) {
+          openPhotoSwipe(
+            hashData.pid,
+            galleryElements[hashData.gid - 1],
+            true,
+            true
+          )
+        }
+      }
+
+      // execute above function
+      initPhotoSwipeFromDOM('.gallery-wrapper')
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/CSSRulePlugin.min.js"></script>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>

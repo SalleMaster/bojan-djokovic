@@ -1,0 +1,94 @@
+.contact-section {
+  background-image: url('/img/layout/contact-bg.png');
+  background-size: cover;
+  margin: 0;
+  padding: 10rem 0;
+  position: relative;
+  color: $light;
+
+  .container {
+    position: relative;
+    z-index: 1;
+
+    .contact-wrapper {
+      .contact-info {
+        .contact-info-card {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 2rem;
+
+          .label {
+            margin-bottom: 0.6rem;
+          }
+
+          .link {
+            margin-right: auto;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      .contact-form-wrapper {
+        display: flex;
+        flex-direction: column;
+        color: $white;
+        padding: 2rem 4rem;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+
+        h4 {
+          align-self: center;
+          margin-bottom: 1rem;
+        }
+
+        form {
+          .form-box {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+
+            label {
+              margin-bottom: 0.5rem;
+            }
+
+            .form-control {
+              padding: 0.7rem 0.5rem;
+              font-size: 1rem;
+              background: rgba(255, 255, 255, 1);
+              color: $black;
+              border: none;
+              border-radius: 5px;
+              transition: background-color 0.2s ease-in-out;
+
+              &:focus {
+                background: rgba(255, 255, 255, 0.5);
+                outline: none;
+              }
+            }
+
+            button {
+              margin-left: auto;
+              border: none;
+              cursor: pointer;
+              font-family: inherit;
+              font-weight: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive Media Queries
+@media (min-width: 992px) {
+  .contact-section {
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+    }
+  }
+}
