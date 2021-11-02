@@ -10,6 +10,8 @@
   }
 
   &.nav-dark {
+    background: rgba($color: #fff, $alpha: 0.5);
+
     a {
       color: $secondary !important;
     }
