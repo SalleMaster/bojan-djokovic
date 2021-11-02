@@ -806,6 +806,10 @@ body.bg-black .line {
   display: none;
 }
 
+.nav.nav-dark {
+  background: rgba(255, 255, 255, 0.5);
+}
+
 .nav.nav-dark a {
   color: #023047 !important;
 }
